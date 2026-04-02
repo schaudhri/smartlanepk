@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartLane — Logistics Platform for Pakistani E-commerce</title>
+  <meta name="description" content="SmartLane connects Pakistani e-commerce brands with 16+ couriers, ops workflows, and COD settlement tools — all from one dashboard." />
+
+  <link rel="icon" href="sl-logo-gradient.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <header class="nav-wrap" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="#top" aria-label="SmartLane">
+        <img src="sl-logo-gradient.svg" alt="SmartLane" />
+      </a>
+
+      <div class="nav-links">
+        <a href="pages/products.html">Products</a>
+        <a href="pages/resources.html">Resources</a>
+        <a href="pages/support.html">Support</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="nav-signin" href="https://app.smartlane.pk" rel="noopener noreferrer" target="_blank">Sign in</a>
+        <a class="btn-primary" href="#demo">Book a demo</a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="pages/products.html">Products</a>
+      <a href="pages/resources.html">Resources</a>
+      <a href="pages/support.html">Support</a>
+      <a href="https://app.smartlane.pk" target="_blank" rel="noopener">Sign in</a>
+      <a class="btn-primary" href="#demo">Book a demo</a>
+    </div>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Logistics platform for Pakistani e-commerce</p>
+      <h1>Ship faster.<br>Reconcile every rupee.</h1>
+      <p class="hero-sub">SmartLane brings your couriers, order operations, and COD workflows together — so your team stops switching tabs and starts scaling.</p>
+      <div class="hero-actions">
+        <a class="btn-primary btn-lg" href="#demo">Book a demo</a>
+        <a class="btn-ghost btn-lg" href="#features">Explore the platform <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="hero-preview" aria-hidden="true">
+      <div class="app-chrome">
+        <div class="app-chrome-bar">
+          <span class="chrome-dot"></span>
+          <span class="chrome-dot"></span>
+          <span class="chrome-dot"></span>
+          <span class="chrome-url">app.smartlane.pk</span>
+        </div>
+        <div class="app-body">
+          <div class="app-sidebar">
+            <div class="app-sidebar-logo">
+              <svg width="16" height="16" viewBox="0 0 22 22" fill="none">
+                <rect x="1" y="1" width="9" height="9" rx="2" fill="white"/>
+                <rect x="12" y="1" width="9" height="9" rx="2" fill="white" opacity=".4"/>
+                <rect x="1" y="12" width="9" height="9" rx="2" fill="white" opacity=".4"/>
+                <rect x="12" y="12" width="9" height="9" rx="2" fill="white"/>
+              </svg>
+            </div>
+            <nav class="app-nav">
+              <a class="app-nav-item app-nav-item--active">Overview</a>
+              <a class="app-nav-item">Shipments</a>
+              <a class="app-nav-item">Finance</a>
+              <a class="app-nav-item">Reports</a>
+              <a class="app-nav-item">Settings</a>
+            </nav>
+          </div>
+          <div class="app-main">
+            <div class="app-toprow">
+              <span class="app-page-title">Overview</span>
+              <span class="app-date">Last 30 days</span>
+            </div>
+            <div class="app-kpis">
+              <div class="app-kpi">
+                <span class="app-kpi-label">Active shipments</span>
+                <span class="app-kpi-value">2,847</span>
+                <span class="app-kpi-delta up">↑ 12%</span>
+              </div>
+              <div class="app-kpi">
+                <span class="app-kpi-label">Pending COD</span>
+                <span class="app-kpi-value">₨ 4.2M</span>
+                <span class="app-kpi-delta">3 couriers</span>
+              </div>
+              <div class="app-kpi">
+                <span class="app-kpi-label">Success rate</span>
+                <span class="app-kpi-value">99.5%</span>
+                <span class="app-kpi-delta up">↑ 0.3%</span>
+              </div>
+            </div>
+            <div class="app-table">
+              <div class="app-table-head">
+                <span>Order ID</span>
+                <span>Courier</span>
+                <span>Status</span>
+                <span>COD</span>
+              </div>
+              <div class="app-table-row">
+                <span class="mono">#SL-4821</span>
+                <span>TCS</span>
+                <span class="status-pill status-delivered">Delivered</span>
+                <span class="mono">₨ 3,500</span>
+              </div>
+              <div class="app-table-row">
+                <span class="mono">#SL-4820</span>
+                <span>Leopards</span>
+                <span class="status-pill status-transit">In transit</span>
+                <span class="mono">₨ 8,200</span>
+              </div>
+              <div class="app-table-row">
+                <span class="mono">#SL-4819</span>
+                <span>Trax</span>
+                <span class="status-pill status-pending">Pending</span>
+                <span class="mono">₨ 5,100</span>
+              </div>
+              <div class="app-table-row">
+                <span class="mono">#SL-4818</span>
+                <span>M&P</span>
+                <span class="status-pill status-delivered">Delivered</span>
+                <span class="mono">₨ 2,800</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats ── -->
+  <div class="stats-strip" aria-label="Key statistics">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num">10M<sup>+</sup></span>
+        <span class="stat-label">Shipments processed</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num">500<sup>+</sup></span>
+        <span class="stat-label">Cities covered</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num">99.5%</span>
+        <span class="stat-label">Delivery success rate</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num">24<span class="stat-unit">hr</span></span>
+        <span class="stat-label">COD settlement</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Couriers strip ── -->
+  <div class="couriers-strip" aria-label="Courier integrations">
+    <p class="couriers-label">Integrates with 16+ couriers across Pakistan</p>
+    <div class="couriers-list">
+      <span>TCS</span>
+      <span>Leopards</span>
+      <span>Trax</span>
+      <span>M&amp;P</span>
+      <span>Rider</span>
+      <span>BlueEx</span>
+      <span>PostEx</span>
+      <span>CallCourier</span>
+      <span>Swyft</span>
+      <span>PTEK</span>
+      <span>+ 6 more</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ── Features ── -->
+    <section class="features" id="features" aria-label="Products">
+      <div class="section-head">
+        <p class="label-tag">Three products. One platform.</p>
+        <h2>Everything your ops team needs, connected.</h2>
+        <p class="section-sub">Built for COD-heavy operations and multi-city fulfillment. Stop juggling courier portals, spreadsheets, and disconnected tools.</p>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-item">
+          <div class="feature-copy">
+            <p class="feature-tag">Smart Delivery</p>
+            <h3>All your couriers, one dashboard.</h3>
+            <p>Book shipments with TCS, Leopards, Trax, M&amp;P, and 12+ more. Compare rates, print labels, and track every parcel without logging into separate portals.</p>
+            <ul class="feature-list">
+              <li>Multi-courier booking &amp; rate comparison</li>
+              <li>Real-time tracking across all couriers</li>
+              <li>Automated label generation</li>
+              <li>Exception alerts &amp; NDR handling</li>
+            </ul>
+            <a class="feature-link" href="pages/smart-delivery.html">Learn about Smart Delivery <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="feature-visual feature-visual-a" aria-hidden="true">
+            <div class="visual-card">
+              <div class="visual-row-head">
+                <span>Courier comparison</span>
+                <span class="visual-badge">Live rates</span>
+              </div>
+              <div class="courier-compare-row">
+                <div class="ccr-name">TCS Express</div>
+                <div class="ccr-eta">Est. 1 day</div>
+                <div class="ccr-price">₨ 280</div>
+                <div class="ccr-select selected">Select</div>
+              </div>
+              <div class="courier-compare-row">
+                <div class="ccr-name">Leopards</div>
+                <div class="ccr-eta">Est. 2 days</div>
+                <div class="ccr-price">₨ 240</div>
+                <div class="ccr-select">Select</div>
+              </div>
+              <div class="courier-compare-row">
+                <div class="ccr-name">Trax</div>
+                <div class="ccr-eta">Est. 1 day</div>
+                <div class="ccr-price">₨ 260</div>
+                <div class="ccr-select">Select</div>
+              </div>
+              <div class="courier-compare-row">
+                <div class="ccr-name">Rider</div>
+                <div class="ccr-eta">Est. 2 days</div>
+                <div class="ccr-price">₨ 220</div>
+                <div class="ccr-select">Select</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-item feature-item--reverse">
+          <div class="feature-copy">
+            <p class="feature-tag">Smart Ops</p>
+            <h3>Your entire order workflow, one queue.</h3>
+            <p>Handle dispatch, exceptions, and reporting without switching tools. One unified queue for everything your ops team needs to close the loop on every order.</p>
+            <ul class="feature-list">
+              <li>Unified order management queue</li>
+              <li>Exception &amp; NDR workflow management</li>
+              <li>Team performance dashboards</li>
+              <li>Automated dispatch routing</li>
+            </ul>
+            <a class="feature-link" href="pages/smart-ops.html">Learn about Smart Ops <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="feature-visual feature-visual-b" aria-hidden="true">
+            <div class="visual-card">
+              <div class="visual-row-head">
+                <span>Order queue</span>
+                <span class="visual-count">48 pending</span>
+              </div>
+              <div class="ops-queue-row ops-row-exception">
+                <span class="ops-id mono">#SL-4799</span>
+                <span class="ops-type">NDR — 2nd attempt</span>
+                <span class="ops-priority high">High</span>
+              </div>
+              <div class="ops-queue-row">
+                <span class="ops-id mono">#SL-4800</span>
+                <span class="ops-type">Awaiting dispatch</span>
+                <span class="ops-priority med">Med</span>
+              </div>
+              <div class="ops-queue-row">
+                <span class="ops-id mono">#SL-4801</span>
+                <span class="ops-type">Address clarification</span>
+                <span class="ops-priority high">High</span>
+              </div>
+              <div class="ops-queue-row">
+                <span class="ops-id mono">#SL-4802</span>
+                <span class="ops-type">Return initiated</span>
+                <span class="ops-priority low">Low</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-copy">
+            <p class="feature-tag">Smart Finance</p>
+            <h3>Know where every COD rupee is.</h3>
+            <p>COD shouldn't be a guessing game. SmartLane reconciles settlements, flags delays, and gives your finance and ops team a shared, live view of every rupee.</p>
+            <ul class="feature-list">
+              <li>Live COD pipeline by courier</li>
+              <li>Automated reconciliation &amp; matching</li>
+              <li>Settlement delay alerts</li>
+              <li>Instant COD advances available</li>
+            </ul>
+            <a class="feature-link" href="pages/smart-finance.html">Learn about Smart Finance <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="feature-visual feature-visual-c" aria-hidden="true">
+            <div class="visual-card">
+              <div class="visual-row-head">
+                <span>COD reconciliation</span>
+                <span class="visual-badge">Live</span>
+              </div>
+              <div class="finance-row">
+                <div class="fin-courier">TCS</div>
+                <div class="fin-amount mono">₨ 1.4M</div>
+                <div class="fin-status settled">Settled</div>
+              </div>
+              <div class="finance-row">
+                <div class="fin-courier">Leopards</div>
+                <div class="fin-amount mono">₨ 820K</div>
+                <div class="fin-status pending-fin">Due tomorrow</div>
+              </div>
+              <div class="finance-row">
+                <div class="fin-courier">Trax</div>
+                <div class="fin-amount mono">₨ 560K</div>
+                <div class="fin-status alert-fin">3 days delayed</div>
+              </div>
+              <div class="finance-row">
+                <div class="fin-courier">M&P</div>
+                <div class="fin-amount mono">₨ 340K</div>
+                <div class="fin-status settled">Settled</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── How it works ── -->
+    <section class="how-it-works" id="how-it-works" aria-label="Getting started">
+      <div class="section-head">
+        <p class="label-tag">Setup in minutes</p>
+        <h2>Live in under 30 minutes.<br>No IT team required.</h2>
+      </div>
+      <div class="steps-row">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Create your account</h3>
+          <p>Sign up and connect your store. We walk you through every step — no developer or IT team needed.</p>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Book your first shipment</h3>
+          <p>Compare courier rates, book with one click, and watch every parcel update in real time.</p>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Get visibility and grow</h3>
+          <p>Use live data to optimise your courier mix, reduce exceptions, and get COD settled faster.</p>
+        </div>
+      </div>
+      <div class="steps-cta">
+        <a class="btn-primary btn-lg" href="#demo">Book a demo</a>
+        <span class="steps-social-proof">Joining 200+ merchants across Pakistan</span>
+      </div>
+    </section>
+
+    <!-- ── Social proof / merchants ── -->
+    <section class="merchants" aria-label="Merchant categories">
+      <div class="merchants-inner">
+        <div class="merchants-copy">
+          <p class="label-tag">Trusted in Pakistan</p>
+          <h2>Built by Pakistanis, for Pakistanis.</h2>
+          <p>We built SmartLane because we know how Pakistani e-commerce actually works — COD at scale, multi-city fulfillment, and couriers that need managing.</p>
+          <div class="made-in-pk">
+            <img src="assets/pakistan-flag.svg" alt="" width="20" height="20" aria-hidden="true" />
+            <span>Made in Pakistan</span>
+          </div>
+        </div>
+        <div class="merchants-grid">
+          <div class="merchant-cat">
+            <span class="mc-label">Fashion &amp; Apparel</span>
+            <span class="mc-count">2,500+ merchants</span>
+          </div>
+          <div class="merchant-cat">
+            <span class="mc-label">Electronics &amp; Gadgets</span>
+            <span class="mc-count">1,200+ merchants</span>
+          </div>
+          <div class="merchant-cat">
+            <span class="mc-label">Home &amp; Living</span>
+            <span class="mc-count">800+ merchants</span>
+          </div>
+          <div class="merchant-cat">
+            <span class="mc-label">Beauty &amp; Personal Care</span>
+            <span class="mc-count">500+ merchants</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Demo ── -->
+    <section class="demo-section" id="demo" aria-label="Book a demo">
+      <div class="demo-inner">
+        <div class="demo-copy">
+          <p class="label-tag">Get started</p>
+          <h2>Book a personalised demo.</h2>
+          <p>Tell us about your business and we'll tailor the walkthrough to how you ship today.</p>
+          <ul class="demo-promises">
+            <li>No setup fees, no hidden costs</li>
+            <li>Live Q&amp;A — ask us anything</li>
+            <li>14-day free trial after the demo</li>
+          </ul>
+        </div>
+        <div class="demo-form-wrap">
+          <p aria-live="polite" class="sr-only" data-form-live></p>
+          <form class="demo-form js-demo-form" action="#" method="post">
+            <div class="field">
+              <label for="v2-email">Email address</label>
+              <input class="input" id="v2-email" name="email" type="email" placeholder="you@company.com" required autocomplete="email" />
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="v2-name">Full name</label>
+                <input class="input" id="v2-name" name="fullName" type="text" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="v2-phone">Phone number</label>
+                <input class="input" id="v2-phone" name="phone" type="tel" placeholder="03XX XXXXXXX" required autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="v2-company">Business name</label>
+                <input class="input" id="v2-company" name="businessName" type="text" placeholder="Your company" required autocomplete="organization" />
+              </div>
+              <div class="field">
+                <label for="v2-city">City</label>
+                <select class="input" id="v2-city" name="city" required>
+                  <option value="" selected disabled>Select city</option>
+                  <option value="lahore">Lahore</option>
+                  <option value="karachi">Karachi</option>
+                  <option value="islamabad">Islamabad</option>
+                  <option value="rawalpindi">Rawalpindi</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn-primary btn-submit" type="submit">Book a demo</button>
+            <p class="form-note">By submitting, you agree to our <a href="pages/terms.html">Terms</a> and <a href="pages/privacy.html">Privacy Policy</a>.</p>
+            <p class="js-form-success" hidden role="status" tabindex="-1">Thanks — we'll be in touch within one business day to schedule your demo.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="faq-section" id="faq" aria-label="FAQ">
+      <div class="faq-inner">
+        <div class="section-head section-head--left">
+          <p class="label-tag">FAQ</p>
+          <h2>Common questions.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>How fast can we get started? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer">You can be up and running in under 30 minutes. Create an account, connect your store, and book your first shipment — no IT team or complex setup required.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Which couriers do you support? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer">SmartLane connects to 16+ couriers across Pakistan including TCS, Leopards, Trax, M&amp;P, Rider, BlueEx, PostEx, and more. Compare rates and book from one dashboard.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer COD settlement visibility? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer">Yes. Smart Finance gives you a live view of your COD pipeline — courier-level settlement status, delay flags, and reconciliation history. All in one place.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I track shipments in real time? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer">Yes — every shipment across all your couriers, tracked in one place. You'll see exceptions, delivery events, and NDRs as they happen — without logging into separate portals.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Is there dedicated support? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer">Yes. Our team is with you from onboarding through scaling. We help you configure your courier mix, understand your data, and get the most out of the platform.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="footer-logo-link">
+          <img src="sl-logo-gradient.svg" alt="SmartLane" />
+        </a>
+        <p>The logistics platform for Pakistani e-commerce.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="pages/smart-delivery.html">Smart Delivery</a></li>
+            <li><a href="pages/smart-ops.html">Smart Ops</a></li>
+            <li><a href="pages/smart-finance.html">Smart Finance</a></li>
+            <li><a href="pages/products.html">Overview</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#demo">Book a demo</a></li>
+            <li><a href="pages/resources.html">Resources</a></li>
+            <li><a href="pages/support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="pages/terms.html">Terms</a></li>
+            <li><a href="pages/privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SmartLane. All rights reserved.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
