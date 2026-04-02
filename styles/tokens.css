@@ -1,0 +1,25 @@
+:root{
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #ffffff;
+  --text: #181d27;
+  --muted: #535862;
+  --muted-2: #65758b;
+  --border: #e6eff8;
+  --brand-600:#0963b5;
+  --brand-700:#00539f;
+  --shadow-xs: 0 1px 2px rgba(10,13,18,0.05);
+  --shadow-lg: 0 32px 64px -12px rgba(10,13,18,0.14);
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 40px;
+
+  --container: 1324px;
+  --container-inner: 1280px;
+
+  --font-sans: "Instrument Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
