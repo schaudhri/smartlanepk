@@ -170,7 +170,7 @@ body.mega-menu-open.site .topbar[data-mega-root]{
   color: var(--brand-700);
 }
 .mega p{ margin:12px 0 0; color: var(--muted-2); line-height:24px; }
-.mega .mega-actions{ margin-top:18px; display:flex; gap:12px; }
+.mega .mega-actions{ margin-top:18px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
 .mega-cards{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -675,10 +675,13 @@ body.site{
   height:auto;
   min-height:0;
   box-sizing:border-box;
-  background: rgba(255, 255, 255, 0.16);
-  -webkit-backdrop-filter: blur(24px);
-  backdrop-filter: blur(24px);
+  background: var(--brand-600);
+  border: 1px solid color-mix(in srgb, #fff 14%, var(--brand-600));
   border-radius: 20px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset;
+}
+.site .topbar .brand img{
+  filter: brightness(0) invert(1);
 }
 .site .nav{
   padding:0;
@@ -693,16 +696,32 @@ body.site{
   line-height:20px;
 }
 .site .nav-links a{
-  color:#0963B5;
+  color: rgba(255, 255, 255, 0.92);
   font-weight:600;
+}
+.site .nav-links a:hover{
+  color: #fff;
+}
+.site .nav-links a[aria-current="page"]{
+  color: #fff;
 }
 .site .nav-actions{
   gap:12px;
 }
+.site .topbar .btn-cta{
+  background: #fff;
+  border-color: #fff;
+  color: var(--brand-600);
+}
+.site .topbar .btn-cta:hover{
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.92);
+  color: var(--brand-700);
+}
 .site .btn-track{
-  background:#1A5FAD;
-  border:1px solid #1A5FAD;
-  color:#fff;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: #fff;
   border-radius:999px;
   padding:10px 14px;
   font-size:14px;
@@ -710,15 +729,42 @@ body.site{
   line-height:18px;
   box-shadow:none;
 }
+.site .btn-track:hover{
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
 .site .btn-signin{
   background:transparent;
-  border:1px solid #0963B5;
-  color:#0963B5;
+  border:1px solid rgba(255, 255, 255, 0.65);
+  color:#fff;
   border-radius:999px;
   padding:10px 14px;
   font-size:14px;
   font-weight:500;
   line-height:18px;
+}
+.site .btn-signin:hover{
+  border-color: #fff;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.site .topbar .btn-try-free{
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: #fff;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.site .topbar .btn-try-free:hover{
+  border-color: #fff;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .site .hero-main{
@@ -2074,7 +2120,7 @@ body.site{
   background: transparent;
   border: 0;
   padding: 0;
-  color: #0963b5;
+  color: rgba(255, 255, 255, 0.92);
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -2084,10 +2130,14 @@ body.site{
   gap: 4px;
 }
 .site .nav-links .dropdown-toggle:hover{
-  color: #00539f;
+  color: #fff;
 }
 .site .nav-links .dropdown-toggle[aria-expanded="true"]{
-  color: #00539f;
+  color: #fff;
+}
+.site .topbar .nav-links .dropdown-toggle img{
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
 }
 
 .site .nav-demo-reveal{
@@ -2114,7 +2164,7 @@ body.site{
   border-radius: 999px;
 }
 .site .topbar.is-past-hero{
-  box-shadow: 0 12px 40px -16px rgba(10, 13, 18, 0.12);
+  box-shadow: 0 16px 44px -18px rgba(0, 30, 70, 0.45);
 }
 
 .js-demo-form.is-submitted .form-fields-wrap{
@@ -2170,6 +2220,9 @@ body.site{
   padding: 0;
   flex-shrink: 0;
 }
+.site .topbar .nav-mobile-toggle{
+  border-color: rgba(255, 255, 255, 0.4);
+}
 .nav-mobile-toggle span{
   display: block;
   width: 18px;
@@ -2177,6 +2230,9 @@ body.site{
   background: var(--brand-600);
   border-radius: 2px;
   transition: transform 200ms ease, opacity 200ms ease;
+}
+.site .topbar .nav-mobile-toggle span{
+  background: #fff;
 }
 .nav-mobile-toggle[aria-expanded="true"] span:nth-child(1){
   transform: translateY(7px) rotate(45deg);
@@ -2224,13 +2280,33 @@ body.site{
   width: 100%;
   justify-content: center;
 }
+.mobile-nav-actions .btn-try-free{
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  color: #fff;
+  border-radius: 999px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.mobile-nav-actions .btn-try-free:hover{
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  color: #fff;
+}
 
 /* Paper homepage mobile overrides */
-.site .mobile-nav{
-  border-top-color: rgba(9, 99, 181, 0.15);
+.site .topbar > .mobile-nav{
+  border-top-color: rgba(255, 255, 255, 0.22);
 }
 .site .mobile-nav-links a{
-  color: #0963b5;
+  color: rgba(255, 255, 255, 0.95);
+}
+.site .topbar > .mobile-nav .mobile-nav-links a{
+  border-bottom-color: rgba(255, 255, 255, 0.14);
 }
 
 /* Inner-page mobile nav — only when not full-screen */
@@ -2269,6 +2345,10 @@ body.mobile-nav-open{
   .site .nav-actions{ gap: 8px; }
   .site .btn-track{ display: none; }
   .site .btn-signin{ display: none; }
+  .site .nav-actions .btn-try-free{ display: none; }
+  .mobile-nav-actions .btn-signin{
+    display: inline-flex;
+  }
 
   /* Full-screen menu: always mounted for opacity dissolve; hidden when not .is-open */
   .mobile-nav{
@@ -2312,14 +2392,15 @@ body.mobile-nav-open{
   }
   /* Same top/left/right/padding/radius as closed bar — only strengthen surface while menu is open */
   body.mobile-nav-open .topbar{
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(255, 255, 255, 0.96);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 28px rgba(9, 99, 181, 0.18);
+    border-color: rgba(9, 99, 181, 0.12);
   }
-  /* White wordmark on bar while menu is open (SVG is blue on transparent) */
+  /* Blue wordmark on light bar while menu is open */
   body.mobile-nav-open .topbar .brand img{
-    filter: brightness(0) invert(1);
+    filter: none;
   }
   /* Nav row must stack above fixed .mobile-nav (sibling, later in DOM) or overlay hides the toggle */
   body.mobile-nav-open .topbar > nav{

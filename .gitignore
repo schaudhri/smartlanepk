@@ -3,3 +3,6 @@
 *.log
 .env
 .env.*
+
+v2.zip
+v2/.claude/
