@@ -1064,6 +1064,23 @@ svg.sl-icon {
   border-radius: 9999px;
 }
 
+/* ── Value bridge (homepage) ── */
+.value-bridge {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 56px 24px 64px;
+}
+
+.value-bridge-text {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--fg-2);
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
 /* ── Section common ── */
 .section-head {
   text-align: center;
@@ -2504,8 +2521,9 @@ textarea.input { resize: vertical; }
     gap: 48px;
     padding: 56px max(20px, env(safe-area-inset-left)) 64px max(20px, env(safe-area-inset-right));
   }
-  .hero-sub,
   .hero-definition { max-width: none; }
+
+  .value-bridge-text { max-width: none; }
 
   .stats-inner {
     grid-template-columns: repeat(2, 1fr);
@@ -2574,7 +2592,8 @@ textarea.input { resize: vertical; }
     padding-right: max(20px, env(safe-area-inset-right));
   }
 
-  .couriers-strip {
+  .couriers-strip,
+  .value-bridge {
     padding-left: max(20px, env(safe-area-inset-left));
     padding-right: max(20px, env(safe-area-inset-right));
   }
