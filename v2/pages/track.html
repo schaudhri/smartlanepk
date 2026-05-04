@@ -7,10 +7,6 @@
   <meta name="description" content="Track your SmartLane shipment in real time. Enter your tracking ID to see the latest status." />
   <link rel="icon" href="../sl-logo-gradient.svg" type="image/svg+xml" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="canonical" href="https://www.smartlane.pk/pages/track.html" />
   <meta property="og:title" content="Track Your Order — SmartLane" />
@@ -132,174 +128,43 @@
 
   <header class="nav-wrap" id="top">
     <nav class="nav" aria-label="Primary">
-      <a class="nav-brand" href="/"><img src="../sl-logo-gradient.svg" alt="SmartLane" /></a>
+      <a class="nav-brand" href="../../index.html"><img src="../sl-logo-gradient.svg" alt="SmartLane" /></a>
       <div class="nav-links">
-        <div class="nav-mega-wrap" data-mega>
-          <button class="nav-mega-btn" aria-expanded="false" aria-haspopup="true">Features <span class="mega-chevron" aria-hidden="true">▾</span></button>
-          <div class="mega-menu" aria-hidden="true">
-            <div class="mega-menu-inner">
-              <a class="mega-card" href="smart-delivery.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-delivery"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Delivery</span>
-                  <span class="mega-card-desc">16+ couriers, one dashboard</span>
-                </span>
-              </a>
-              <a class="mega-card" href="smart-ops.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-operations"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Ops</span>
-                  <span class="mega-card-desc">Unified ops queue &amp; workflows</span>
-                </span>
-              </a>
-              <a class="mega-card" href="smart-finance.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-finance"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Finance</span>
-                  <span class="mega-card-desc">COD reconciliation &amp; advances</span>
-                </span>
-              </a>
-              <a class="mega-card mega-card--all" href="features.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-all-features"/></svg>
-                <span class="mega-card-stack"><span class="mega-card-title">All features →</span></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a href="resources.html">Resources</a>
-        <a href="support.html">Support</a>
-        <a href="careers.html">Careers</a>
-        <a href="about.html">About</a>
+        <a href="smart-delivery.html">Smart Delivery</a>
+        <a href="smart-ops.html">Smart Operations</a>
+        <a href="smart-finance.html">Smart Finance</a>
+        <a href="../../pages/pricing.html">Pricing</a>
+        <a href="reseller.html">For Resellers</a>
+        <a href="about.html">About Us</a>
       </div>
       <div class="nav-actions">
-        <div class="nav-track-wrap" data-track>
-          <button class="nav-track-btn" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="nav-track-dropdown">Track order</button>
-          <div class="track-dropdown" id="nav-track-dropdown" aria-hidden="true">
-            <form class="js-track-form" action="track.html" method="get">
-              <label for="nav-track-id" class="sr-only">Tracking ID</label>
-              <input class="track-input" id="nav-track-id" name="id" type="text" placeholder="Enter tracking ID…" autocomplete="off" inputmode="text" />
-              <button class="track-submit btn-primary" type="submit">Track</button>
-            </form>
-          </div>
-        </div>
         <a class="nav-signin" href="https://app.smartlane.pk" rel="noopener noreferrer" target="_blank">Sign in</a>
         <a class="btn-primary" href="support.html#demo">Book a demo</a>
       </div>
       <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     </nav>
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <button class="mobile-sub-toggle" aria-expanded="false">Features ▾</button>
-      <div class="mobile-sub" data-open="false">
-        <a href="smart-delivery.html">Smart Delivery</a>
-        <a href="smart-ops.html">Smart Ops</a>
-        <a href="smart-finance.html">Smart Finance</a>
-        <a href="features.html">All features</a>
+      <div class="mobile-menu-header">
+        <a href="../" class="mobile-menu-logo-link" aria-label="SmartLane home">
+          <img src="../sl-logo-gradient.svg" alt="SmartLane" />
+        </a>
+        <button class="mobile-menu-close" aria-label="Close menu" type="button">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
       </div>
-      <a href="resources.html">Resources</a>
-      <a href="support.html">Support</a>
-      <a href="careers.html">Careers</a>
-      <a href="about.html">About</a>
-      <a href="https://app.smartlane.pk" target="_blank" rel="noopener">Sign in</a>
-      <a class="btn-primary" href="support.html#demo">Book a demo</a>
+      <nav class="mobile-menu-nav">
+        <a href="smart-delivery.html">Smart Delivery</a>
+        <a href="smart-ops.html">Smart Operations</a>
+        <a href="smart-finance.html">Smart Finance</a>
+        <a href="reseller.html">For Resellers</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="https://app.smartlane.pk" target="_blank" rel="noopener" class="mobile-signin">Sign in</a>
+        <a class="btn-hero-primary" href="support.html#demo">Book a demo</a>
+      </div>
     </div>
   </header>
-
-  <div class="page-hero">
-    <div class="page-hero-inner">
-      <div class="page-hero-eyebrow-row">
-        <svg class="sl-icon sl-icon--sm" aria-hidden="true" focusable="false"><use href="#sl-shipment-box"/></svg>
-        <p class="eyebrow">Order tracking</p>
-      </div>
-      <h1>Track your shipment.</h1>
-      <p class="page-hero-sub">Enter your SmartLane tracking ID to see real-time delivery status, courier updates, and estimated delivery.</p>
-    </div>
-  </div>
-
-  <main id="main-content">
-    <div class="track-page-wrap">
-
-      <div class="track-search-box">
-        <div class="track-search-icon" aria-hidden="true">
-          <span class="sl-icon-tile"><svg class="sl-icon sl-icon--md" focusable="false"><use href="#sl-delivery"/></svg></span>
-        </div>
-        <form class="track-search-form" action="track.html" method="get">
-          <label for="track-main-input" class="track-search-label">Tracking ID</label>
-          <div class="track-search-row">
-            <input class="track-search-input input" id="track-main-input" name="id" type="text" placeholder="e.g. SL-4821 or courier tracking number" autocomplete="off" />
-            <button class="btn-primary track-search-btn" type="submit">Track shipment</button>
-          </div>
-        </form>
-      </div>
-
-      <div class="js-track-error track-error-panel" hidden>
-        <p class="track-error-title">We couldn't use that ID</p>
-        <p class="js-track-error-msg"></p>
-      </div>
-
-      <!-- Result (shown when ?id= param is present and long enough) -->
-      <div class="js-track-result track-result" hidden>
-        <p class="track-demo-banner" role="status">Sample tracking data for demonstration. Live updates will appear once your courier feed is connected.</p>
-        <div class="track-result-header">
-          <div class="track-result-id">
-            <span class="track-result-label">Tracking ID</span>
-            <span class="mono js-track-id-display track-result-value"></span>
-          </div>
-          <div class="track-result-status-wrap">
-            <span class="status-pill status-transit">In transit</span>
-          </div>
-        </div>
-
-        <div class="track-meta-row">
-          <div class="track-meta-item">
-            <span class="track-meta-label">Courier</span>
-            <span class="track-meta-value">TCS Express</span>
-          </div>
-          <div class="track-meta-item">
-            <span class="track-meta-label">Origin</span>
-            <span class="track-meta-value">Karachi</span>
-          </div>
-          <div class="track-meta-item">
-            <span class="track-meta-label">Destination</span>
-            <span class="track-meta-value">Lahore</span>
-          </div>
-          <div class="track-meta-item">
-            <span class="track-meta-label">Est. delivery</span>
-            <span class="track-meta-value">Tomorrow by 6 PM</span>
-          </div>
-        </div>
-
-        <div class="track-timeline">
-          <div class="track-timeline-label">Shipment events</div>
-          <div class="track-events">
-            <div class="track-event track-event--active">
-              <div class="track-event-dot"></div>
-              <div class="track-event-content">
-                <span class="track-event-status">In transit — Hub Lahore</span>
-                <span class="track-event-time">Today, 9:42 AM</span>
-              </div>
-            </div>
-            <div class="track-event">
-              <div class="track-event-dot track-event-dot--done"></div>
-              <div class="track-event-content">
-                <span class="track-event-status">Departed — Hub Karachi</span>
-                <span class="track-event-time">Yesterday, 11:15 PM</span>
-              </div>
-            </div>
-            <div class="track-event">
-              <div class="track-event-dot track-event-dot--done"></div>
-              <div class="track-event-content">
-                <span class="track-event-status">Received at warehouse</span>
-                <span class="track-event-time">Yesterday, 6:30 PM</span>
-              </div>
-            </div>
-            <div class="track-event">
-              <div class="track-event-dot track-event-dot--done"></div>
-              <div class="track-event-content">
-                <span class="track-event-status">Shipment booked</span>
-                <span class="track-event-time">Yesterday, 3:00 PM</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         <p class="track-disclaimer">Tracking events are sourced from the courier directly. SmartLane updates status within a few minutes of each courier scan.</p>
@@ -362,18 +227,16 @@
           <h4>Product</h4>
           <ul>
             <li><a href="smart-delivery.html">Smart Delivery</a></li>
-            <li><a href="smart-ops.html">Smart Ops</a></li>
+            <li><a href="smart-ops.html">Smart Operations</a></li>
             <li><a href="smart-finance.html">Smart Finance</a></li>
-            <li><a href="features.html">Features</a></li>
+            <li><a href="../../pages/pricing.html">Pricing</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="support.html#demo">Book a demo</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="support.html">Support</a></li>
             <li><a href="careers.html">Careers</a></li>
           </ul>
         </div>

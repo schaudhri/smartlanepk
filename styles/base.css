@@ -1,3 +1,4 @@
+@import url("./satoshi.css");
 @import url("./tokens.css");
 
 *,
@@ -5,6 +6,7 @@
 *::after{ box-sizing:border-box; }
 
 html{
+  font-family: var(--font-sans);
   -webkit-text-size-adjust:100%;
   text-size-adjust:100%;
   background-color:#ffffff;

@@ -10,6 +10,34 @@ if (navWrap) {
   }).observe(navSentinel);
 }
 
+// ── Track order modal ──
+const trackModal = document.getElementById('track-modal');
+
+function openTrackModal() {
+  if (!trackModal) return;
+  trackModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  requestAnimationFrame(() => {
+    trackModal.querySelector('.track-modal-input')?.focus();
+  });
+}
+
+function closeTrackModal() {
+  if (!trackModal) return;
+  trackModal.hidden = true;
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.js-track-modal-open').forEach(el => {
+  el.addEventListener('click', openTrackModal);
+});
+document.querySelectorAll('.js-track-modal-close').forEach(el => {
+  el.addEventListener('click', closeTrackModal);
+});
+trackModal?.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeTrackModal();
+});
+
 // ── Mega menu ──
 document.querySelectorAll('[data-mega]').forEach(wrap => {
   const btn = wrap.querySelector('.nav-mega-btn');
@@ -121,6 +149,10 @@ function setMobileMenuOpen(open) {
 hamburger?.addEventListener('click', () => {
   const isOpen = mobileMenu?.dataset.open === 'true';
   setMobileMenuOpen(!isOpen);
+});
+
+document.querySelector('.mobile-menu-close')?.addEventListener('click', () => {
+  setMobileMenuOpen(false);
 });
 
 document.querySelectorAll('.mobile-sub-toggle').forEach(btn => {

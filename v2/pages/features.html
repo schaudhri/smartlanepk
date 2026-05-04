@@ -22,10 +22,6 @@
   <meta name="twitter:title" content="Features — SmartLane" />
   <meta name="twitter:description" content="Smart Delivery, Smart Ops, and Smart Finance — one platform for Pakistani e-commerce logistics." />
   <meta name="twitter:image" content="https://www.smartlane.pk/assets/og-default.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -132,81 +128,46 @@
 
   <header class="nav-wrap" id="top">
     <nav class="nav" aria-label="Primary">
-      <a class="nav-brand" href="/"><img src="../sl-logo-gradient.svg" alt="SmartLane" /></a>
+      <a class="nav-brand" href="../../index.html"><img src="../sl-logo-gradient.svg" alt="SmartLane" /></a>
       <div class="nav-links">
-        <div class="nav-mega-wrap" data-mega>
-          <button class="nav-mega-btn" aria-expanded="false" aria-haspopup="true">Features <span class="mega-chevron" aria-hidden="true">▾</span></button>
-          <div class="mega-menu" aria-hidden="true">
-            <div class="mega-menu-inner">
-              <a class="mega-card" href="smart-delivery.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-delivery"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Delivery</span>
-                  <span class="mega-card-desc">16+ couriers, one dashboard</span>
-                </span>
-              </a>
-              <a class="mega-card" href="smart-ops.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-operations"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Ops</span>
-                  <span class="mega-card-desc">Unified ops queue &amp; workflows</span>
-                </span>
-              </a>
-              <a class="mega-card" href="smart-finance.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-finance"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Finance</span>
-                  <span class="mega-card-desc">COD reconciliation &amp; advances</span>
-                </span>
-              </a>
-              <a class="mega-card mega-card--all" href="features.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-all-features"/></svg>
-                <span class="mega-card-stack"><span class="mega-card-title">All features →</span></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a href="resources.html">Resources</a>
-        <a href="support.html">Support</a>
-        <a href="careers.html">Careers</a>
-        <a href="about.html">About</a>
+        <a href="smart-delivery.html">Smart Delivery</a>
+        <a href="smart-ops.html">Smart Operations</a>
+        <a href="smart-finance.html">Smart Finance</a>
+        <a href="../../pages/pricing.html">Pricing</a>
+        <a href="reseller.html">For Resellers</a>
+        <a href="about.html">About Us</a>
       </div>
       <div class="nav-actions">
-        <div class="nav-track-wrap" data-track>
-          <button class="nav-track-btn" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="nav-track-dropdown">Track order</button>
-          <div class="track-dropdown" id="nav-track-dropdown" aria-hidden="true">
-            <form class="js-track-form" action="track.html" method="get">
-              <label for="nav-track-id" class="sr-only">Tracking ID</label>
-              <input class="track-input" id="nav-track-id" name="id" type="text" placeholder="Enter tracking ID…" autocomplete="off" inputmode="text" />
-              <button class="track-submit btn-primary" type="submit">Track</button>
-            </form>
-          </div>
-        </div>
         <a class="nav-signin" href="https://app.smartlane.pk" rel="noopener noreferrer" target="_blank">Sign in</a>
         <a class="btn-primary" href="support.html#demo">Book a demo</a>
       </div>
       <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     </nav>
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <button class="mobile-sub-toggle" aria-expanded="false">Features ▾</button>
-      <div class="mobile-sub" data-open="false">
-        <a href="smart-delivery.html">Smart Delivery</a>
-        <a href="smart-ops.html">Smart Ops</a>
-        <a href="smart-finance.html">Smart Finance</a>
-        <a href="features.html">All features</a>
+      <div class="mobile-menu-header">
+        <a href="../" class="mobile-menu-logo-link" aria-label="SmartLane home">
+          <img src="../sl-logo-gradient.svg" alt="SmartLane" />
+        </a>
+        <button class="mobile-menu-close" aria-label="Close menu" type="button">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
       </div>
-      <a href="resources.html">Resources</a>
-      <a href="support.html">Support</a>
-      <a href="careers.html">Careers</a>
-      <a href="about.html">About</a>
-      <a href="https://app.smartlane.pk" target="_blank" rel="noopener">Sign in</a>
-      <a class="btn-primary" href="support.html#demo">Book a demo</a>
+      <nav class="mobile-menu-nav">
+        <a href="smart-delivery.html">Smart Delivery</a>
+        <a href="smart-ops.html">Smart Operations</a>
+        <a href="smart-finance.html">Smart Finance</a>
+        <a href="reseller.html">For Resellers</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="https://app.smartlane.pk" target="_blank" rel="noopener" class="mobile-signin">Sign in</a>
+        <a class="btn-hero-primary" href="support.html#demo">Book a demo</a>
+      </div>
     </div>
   </header>
 
   <div class="page-hero">
     <div class="page-hero-inner">
-      <p class="eyebrow">Platform features</p>
       <h1>One platform.<br>Three products.</h1>
       <p class="page-hero-sub">Start with delivery, operations, or finance — and expand as you scale. Everything connects, so your team always has the full picture.</p>
       <div class="page-hero-actions">
@@ -217,107 +178,292 @@
   </div>
 
   <main id="main-content">
-    <div class="products-grid">
 
-      <div class="product-card">
-        <div class="product-card-head">
-          <div class="pc-head-row">
-            <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-delivery"/></svg>
-            <span class="pc-tag">Smart Delivery</span>
-          </div>
-          <h3>Ship with 16+ couriers, from one place.</h3>
-          <p class="product-card-desc">Stop juggling courier portals. Compare rates, book shipments, print labels, and track every parcel in real time — all from one dashboard.</p>
+    <section class="feat-compare" aria-labelledby="compare-heading">
+      <div class="feat-compare-inner">
+        <div class="feat-compare-header">
+          <h2 id="compare-heading">Compare every feature</h2>
+          <p class="feat-compare-sub">Choose the plan that fits your volume. Every plan includes COD settlements, real-time tracking, and full courier access.</p>
         </div>
-        <div class="product-card-body">
-          <ul class="pc-features">
-            <li>Multi-courier booking &amp; rate comparison</li>
-            <li>Real-time tracking across all couriers</li>
-            <li>Automated label generation</li>
-            <li>NDR &amp; exception management</li>
-            <li>Performance insights by courier</li>
-          </ul>
-        </div>
-        <div class="product-card-footer">
-          <a class="feature-link" href="smart-delivery.html">Learn about Smart Delivery →</a>
+        <div class="feat-table-wrap">
+          <table class="feat-table" aria-label="Feature comparison across SmartLane plans">
+            <thead class="feat-thead">
+              <tr>
+                <th class="ft-col-feat" scope="col">Features</th>
+                <th class="ft-col-tier" scope="col">
+                  <span class="ft-tier-name">Small</span>
+                  <a class="btn-outline" href="support.html#demo">Get started</a>
+                </th>
+                <th class="ft-col-tier" scope="col">
+                  <span class="ft-tier-name">Medium</span>
+                  <a class="btn-outline" href="support.html#demo">Get started</a>
+                </th>
+                <th class="ft-col-tier ft-col-tier--pop" scope="col">
+                  <span class="ft-pop-badge">Popular</span>
+                  <span class="ft-tier-name">Large</span>
+                  <a class="btn-primary" href="support.html#demo">Get started</a>
+                </th>
+                <th class="ft-col-tier" scope="col">
+                  <span class="ft-tier-name">Enterprise</span>
+                  <a class="btn-outline" href="support.html">Talk to us</a>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="ft-group"><td colspan="5">Shipping &amp; Delivery</td></tr>
+              <tr>
+                <td class="ft-feat">Multi-courier shipping</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Real-time tracking &amp; updates</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Returns &amp; reverse pickups</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Shipping documents (AWB, CN, etc.)</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Shopify integration</td>
+                <td class="ft-val"><span class="ft-label">Basic</span></td>
+                <td class="ft-val"><span class="ft-label">Advanced</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-label">Advanced</span></td>
+                <td class="ft-val"><span class="ft-label">Custom</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Bulk order processing</td>
+                <td class="ft-val"><span class="ft-label">Limited</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Partial / split shipments</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Multi-store management</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Warehouse management</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+
+              <tr class="ft-group"><td colspan="5">Finance</td></tr>
+              <tr>
+                <td class="ft-feat">COD settlements</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Withdrawals &amp; transaction history</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Merchant wallet</td>
+                <td class="ft-val"><span class="ft-label">Basic</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Invoice &amp; reconciliation</td>
+                <td class="ft-val"><span class="ft-label">Basic</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Payment links</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Revenue-based financing</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Bank transfers (IBFT)</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Beneficiary management</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Bulk payouts &amp; payroll</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+
+              <tr class="ft-group"><td colspan="5">Platform &amp; Integrations</td></tr>
+              <tr>
+                <td class="ft-feat">API access</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Webhooks</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Role-based access</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-label">Basic</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-label">Advanced</span></td>
+                <td class="ft-val"><span class="ft-label">Advanced</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Approval workflows (4-eye system)</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Transaction limits &amp; controls</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Audit logs</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+
+              <tr class="ft-group"><td colspan="5">Compliance &amp; Notifications</td></tr>
+              <tr>
+                <td class="ft-feat">KYC onboarding &amp; compliance</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Tracking page (customer-facing)</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">WhatsApp notifications</td>
+                <td class="ft-val"><span class="ft-label">Basic</span></td>
+                <td class="ft-val"><span class="ft-label">Advanced</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-label">Advanced</span></td>
+                <td class="ft-val"><span class="ft-label">Custom</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Order verification (pre-dispatch)</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+
+              <tr class="ft-group"><td colspan="5">Support</td></tr>
+              <tr>
+                <td class="ft-feat">Ticketing support system</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Claims &amp; dispute management</td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-yes" aria-label="Included">✓</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Support level</td>
+                <td class="ft-val"><span class="ft-label">Standard</span></td>
+                <td class="ft-val"><span class="ft-label">Priority</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-label">Priority</span></td>
+                <td class="ft-val"><span class="ft-label">Dedicated</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Dedicated account manager</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">Custom workflows &amp; integrations</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td class="ft-feat">SLA &amp; enterprise support</td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val ft-val--pop"><span class="ft-no" aria-label="Not included">—</span></td>
+                <td class="ft-val"><span class="ft-yes" aria-label="Included">✓</span></td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </div>
-
-      <div class="product-card">
-        <div class="product-card-head">
-          <div class="pc-head-row">
-            <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-operations"/></svg>
-            <span class="pc-tag">Smart Ops</span>
-          </div>
-          <h3>Your entire workflow, one queue.</h3>
-          <p class="product-card-desc">Handle dispatch, exceptions, and reporting without switching tools. One unified queue for everything your ops team needs to close every order.</p>
-        </div>
-        <div class="product-card-body">
-          <ul class="pc-features">
-            <li>Unified order management queue</li>
-            <li>Exception &amp; NDR workflow handling</li>
-            <li>Team roles &amp; task assignments</li>
-            <li>Performance dashboards</li>
-            <li>Automated dispatch routing</li>
-          </ul>
-        </div>
-        <div class="product-card-footer">
-          <a class="feature-link" href="smart-ops.html">Learn about Smart Ops →</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card-head">
-          <div class="pc-head-row">
-            <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-finance"/></svg>
-            <span class="pc-tag">Smart Finance</span>
-          </div>
-          <h3>Know where every COD rupee is.</h3>
-          <p class="product-card-desc">COD shouldn't be a guessing game. Reconcile settlements, flag delays, and give your finance team a live view of every rupee — by courier.</p>
-        </div>
-        <div class="product-card-body">
-          <ul class="pc-features">
-            <li>Live COD pipeline by courier</li>
-            <li>Automated reconciliation &amp; matching</li>
-            <li>Settlement delay alerts</li>
-            <li>Instant COD advances</li>
-            <li>Shared finance &amp; ops view</li>
-          </ul>
-        </div>
-        <div class="product-card-footer">
-          <a class="feature-link" href="smart-finance.html">Learn about Smart Finance →</a>
-        </div>
-      </div>
-
-    </div>
-
-    <dl class="stats-strip" aria-label="Key statistics">
-      <div class="stats-inner">
-        <div class="stat-card">
-          <div class="stat">
-            <dt class="stat-label">Shipments processed</dt>
-            <dd class="stat-num">10M<sup>+</sup></dd>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat">
-            <dt class="stat-label">Cities covered</dt>
-            <dd class="stat-num">500<sup>+</sup></dd>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat">
-            <dt class="stat-label">Delivery success rate</dt>
-            <dd class="stat-num">99.5%</dd>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat">
-            <dt class="stat-label">Active merchants</dt>
-            <dd class="stat-num">200<sup>+</sup></dd>
-          </div>
-        </div>
-      </div>
-    </dl>
+    </section>
 
     <div class="cta-band">
       <div class="cta-band-inner">
@@ -362,18 +508,16 @@
           <h4>Product</h4>
           <ul>
             <li><a href="smart-delivery.html">Smart Delivery</a></li>
-            <li><a href="smart-ops.html">Smart Ops</a></li>
+            <li><a href="smart-ops.html">Smart Operations</a></li>
             <li><a href="smart-finance.html">Smart Finance</a></li>
-            <li><a href="features.html">Features</a></li>
+            <li><a href="../../pages/pricing.html">Pricing</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="support.html#demo">Book a demo</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="support.html">Support</a></li>
             <li><a href="careers.html">Careers</a></li>
           </ul>
         </div>

@@ -25,11 +25,6 @@
   <meta name="theme-color" content="#ffffff" />
 
   <link rel="dns-prefetch" href="https://app.smartlane.pk" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
@@ -189,23 +184,11 @@
             </div>
           </div>
         </div>
-        <a href="pages/resources.html">Resources</a>
-        <a href="pages/support.html">Support</a>
-        <a href="pages/careers.html">Careers</a>
-        <a href="pages/about.html">About</a>
+        <a href="pages/reseller.html">Resellers</a>
+        <a href="pages/about.html">About Smartlane</a>
       </div>
 
       <div class="nav-actions">
-        <div class="nav-track-wrap" data-track>
-          <button class="nav-track-btn" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="nav-track-dropdown">Track order</button>
-          <div class="track-dropdown" id="nav-track-dropdown" aria-hidden="true">
-            <form class="js-track-form" action="pages/track.html" method="get">
-              <label for="nav-track-id" class="sr-only">Tracking ID</label>
-              <input class="track-input" id="nav-track-id" name="id" type="text" placeholder="Enter tracking ID…" autocomplete="off" inputmode="text" />
-              <button class="track-submit btn-primary" type="submit">Track</button>
-            </form>
-          </div>
-        </div>
         <a class="nav-signin" href="https://app.smartlane.pk" rel="noopener noreferrer" target="_blank">Sign in</a>
         <a class="btn-primary" href="#demo">Book a demo</a>
       </div>
@@ -216,19 +199,29 @@
     </nav>
 
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <button class="mobile-sub-toggle" aria-expanded="false">Features ▾</button>
-      <div class="mobile-sub" data-open="false">
-        <a href="pages/smart-delivery.html">Smart Delivery</a>
-        <a href="pages/smart-ops.html">Smart Ops</a>
-        <a href="pages/smart-finance.html">Smart Finance</a>
-        <a href="pages/features.html">All features</a>
+      <div class="mobile-menu-header">
+        <a href="#top" class="mobile-menu-logo-link" aria-label="SmartLane home">
+          <img src="sl-logo-gradient.svg" alt="SmartLane" />
+        </a>
+        <button class="mobile-menu-close" aria-label="Close menu" type="button">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
       </div>
-      <a href="pages/resources.html">Resources</a>
-      <a href="pages/support.html">Support</a>
-      <a href="pages/careers.html">Careers</a>
-      <a href="pages/about.html">About</a>
-      <a href="https://app.smartlane.pk" target="_blank" rel="noopener">Sign in</a>
-      <a class="btn-primary" href="#demo">Book a demo</a>
+      <nav class="mobile-menu-nav">
+        <button class="mobile-sub-toggle" aria-expanded="false" type="button">Features <span aria-hidden="true">▾</span></button>
+        <div class="mobile-sub" data-open="false">
+          <a href="pages/smart-delivery.html">Smart Delivery</a>
+          <a href="pages/smart-ops.html">Smart Ops</a>
+          <a href="pages/smart-finance.html">Smart Finance</a>
+          <a href="pages/features.html">All features</a>
+        </div>
+        <a href="pages/reseller.html">Resellers</a>
+        <a href="pages/about.html">About Smartlane</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="https://app.smartlane.pk" target="_blank" rel="noopener" class="mobile-signin">Sign in</a>
+        <a class="btn-hero-primary" href="#demo">Book a demo</a>
+      </div>
     </div>
   </header>
 
@@ -236,9 +229,10 @@
   <section class="hero" aria-label="Hero">
     <div class="hero-inner">
       <h1>Spend less time chasing couriers and COD.</h1>
-      <p class="hero-definition">SmartLane brings your courier bookings, daily operations, and COD settlements into one dashboard. Spend less time chasing, and more time growing your business.</p>
+      <p class="hero-definition">Book, track, and reconcile across 16+ couriers from one dashboard — with COD matched order by order.</p>
       <div class="hero-actions">
-        <a class="btn-primary btn-lg" href="#demo">Book a demo</a>
+        <a class="btn-hero-primary btn-lg" href="#demo">Book a demo</a>
+        <button class="btn-hero-ghost btn-lg js-track-modal-open" type="button">Track order</button>
       </div>
     </div>
 
@@ -755,7 +749,8 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/reseller.html">Resellers</a></li>
+            <li><a href="pages/about.html">About Smartlane</a></li>
             <li><a href="#demo">Book a demo</a></li>
             <li><a href="pages/resources.html">Resources</a></li>
             <li><a href="pages/support.html">Support</a></li>
@@ -776,6 +771,23 @@
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
+
+  <!-- ── Track Order Modal ── -->
+  <div class="track-modal" id="track-modal" role="dialog" aria-modal="true" aria-labelledby="track-modal-title" hidden>
+    <div class="track-modal-backdrop js-track-modal-close" aria-hidden="true"></div>
+    <div class="track-modal-card">
+      <div class="track-modal-head">
+        <h2 id="track-modal-title">Track your order</h2>
+        <button class="track-modal-close js-track-modal-close" aria-label="Close tracking">✕</button>
+      </div>
+      <p class="track-modal-hint">Enter the tracking ID from your order confirmation — e.g. <strong>SL-4821</strong></p>
+      <form class="track-modal-form js-track-modal-form" action="pages/track.html" method="get">
+        <label for="modal-track-id" class="sr-only">Tracking ID</label>
+        <input class="track-modal-input" id="modal-track-id" name="id" type="text" placeholder="Enter tracking ID…" autocomplete="off" inputmode="text" required />
+        <button class="btn-primary" type="submit">Track shipment</button>
+      </form>
+    </div>
+  </div>
 
   <script src="scripts/main.js" defer></script>
 </body>

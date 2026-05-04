@@ -22,10 +22,6 @@
   <meta name="twitter:title" content="About — SmartLane" />
   <meta name="twitter:description" content="SmartLane is the technology and data layer connecting Pakistan's e-commerce merchants, couriers, and capital — built by founders who lived the problem firsthand." />
   <meta name="twitter:image" content="https://www.smartlane.pk/assets/og-default.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
   <style>
     /* ── About page specific ── */
@@ -60,48 +56,6 @@
     .about-story-content p strong {
       color: var(--fg);
       font-weight: 600;
-    }
-
-    /* ── Stats band ── */
-    .about-stats {
-      background: var(--bg-subtle);
-      border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-    }
-    .about-stats-inner {
-      max-width: var(--max);
-      margin: 0 auto;
-      display: flex;
-      align-items: stretch;
-    }
-    .about-stat-item {
-      flex: 1;
-      padding: 40px 32px;
-      border-right: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .about-stat-item:last-child { border-right: none; }
-    .about-stat-num {
-      font-family: var(--font-head);
-      font-size: 36px;
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      color: var(--accent);
-      line-height: 1;
-    }
-    .about-stat-label {
-      font-family: var(--font-body);
-      font-size: 13px;
-      color: var(--fg-3);
-      line-height: 1.4;
-    }
-    .about-stat-icon-wrap {
-      margin-bottom: 10px;
-    }
-    .about-stat-icon-wrap .sl-icon {
-      color: var(--accent);
     }
 
     /* ── Team section ── */
@@ -268,13 +222,9 @@
       .team-grid { grid-template-columns: 1fr; }
       .team-card { border-right: none; border-bottom: 1px solid var(--border); }
       .team-card:last-child { border-bottom: none; }
-      .about-stats-inner { flex-wrap: wrap; }
-      .about-stat-item { width: 50%; border-bottom: 1px solid var(--border); }
-      .about-stat-item:nth-child(2) { border-right: none; }
       .values-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 640px) {
-      .about-stat-item { width: 100%; border-right: none; }
       .values-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -383,84 +333,46 @@
 
   <header class="nav-wrap" id="top">
     <nav class="nav" aria-label="Primary">
-      <a class="nav-brand" href="/"><img src="../sl-logo-gradient.svg" alt="SmartLane" /></a>
+      <a class="nav-brand" href="../../index.html"><img src="../sl-logo-gradient.svg" alt="SmartLane" /></a>
       <div class="nav-links">
-        <div class="nav-mega-wrap" data-mega>
-          <button class="nav-mega-btn" aria-expanded="false" aria-haspopup="true">Features <span class="mega-chevron" aria-hidden="true">▾</span></button>
-          <div class="mega-menu" aria-hidden="true">
-            <div class="mega-menu-inner">
-              <a class="mega-card" href="smart-delivery.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-delivery"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Delivery</span>
-                  <span class="mega-card-desc">16+ couriers, one dashboard</span>
-                </span>
-              </a>
-              <a class="mega-card" href="smart-ops.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-operations"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Ops</span>
-                  <span class="mega-card-desc">Unified ops queue &amp; workflows</span>
-                </span>
-              </a>
-              <a class="mega-card" href="smart-finance.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-finance"/></svg>
-                <span class="mega-card-stack">
-                  <span class="mega-card-title">Smart Finance</span>
-                  <span class="mega-card-desc">COD reconciliation &amp; advances</span>
-                </span>
-              </a>
-              <a class="mega-card mega-card--all" href="features.html">
-                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-all-features"/></svg>
-                <span class="mega-card-stack"><span class="mega-card-title">All features →</span></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a href="resources.html">Resources</a>
-        <a href="support.html">Support</a>
-        <a href="careers.html">Careers</a>
-        <a href="about.html" aria-current="page">About</a>
+        <a href="smart-delivery.html">Smart Delivery</a>
+        <a href="smart-ops.html">Smart Operations</a>
+        <a href="smart-finance.html">Smart Finance</a>
+        <a href="../../pages/pricing.html">Pricing</a>
+        <a href="reseller.html">For Resellers</a>
+        <a href="about.html" aria-current="page">About Us</a>
       </div>
       <div class="nav-actions">
-        <div class="nav-track-wrap" data-track>
-          <button class="nav-track-btn" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="nav-track-dropdown">Track order</button>
-          <div class="track-dropdown" id="nav-track-dropdown" aria-hidden="true">
-            <form class="js-track-form" action="track.html" method="get">
-              <label for="nav-track-id" class="sr-only">Tracking ID</label>
-              <input class="track-input" id="nav-track-id" name="id" type="text" placeholder="Enter tracking ID…" autocomplete="off" inputmode="text" />
-              <button class="track-submit btn-primary" type="submit">Track</button>
-            </form>
-          </div>
-        </div>
         <a class="nav-signin" href="https://app.smartlane.pk" rel="noopener noreferrer" target="_blank">Sign in</a>
         <a class="btn-primary" href="support.html#demo">Book a demo</a>
       </div>
       <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     </nav>
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <button class="mobile-sub-toggle" aria-expanded="false">Features ▾</button>
-      <div class="mobile-sub" data-open="false">
-        <a href="smart-delivery.html">Smart Delivery</a>
-        <a href="smart-ops.html">Smart Ops</a>
-        <a href="smart-finance.html">Smart Finance</a>
-        <a href="features.html">All features</a>
+      <div class="mobile-menu-header">
+        <a href="../" class="mobile-menu-logo-link" aria-label="SmartLane home">
+          <img src="../sl-logo-gradient.svg" alt="SmartLane" />
+        </a>
+        <button class="mobile-menu-close" aria-label="Close menu" type="button">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
       </div>
-      <a href="resources.html">Resources</a>
-      <a href="support.html">Support</a>
-      <a href="careers.html">Careers</a>
-      <a href="about.html" aria-current="page">About</a>
-      <a href="https://app.smartlane.pk" target="_blank" rel="noopener">Sign in</a>
-      <a class="btn-primary" href="support.html#demo">Book a demo</a>
+      <nav class="mobile-menu-nav">
+        <a href="smart-delivery.html">Smart Delivery</a>
+        <a href="smart-ops.html">Smart Operations</a>
+        <a href="smart-finance.html">Smart Finance</a>
+        <a href="reseller.html">For Resellers</a>
+        <a href="about.html" aria-current="page">About Us</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="https://app.smartlane.pk" target="_blank" rel="noopener" class="mobile-signin">Sign in</a>
+        <a class="btn-hero-primary" href="support.html#demo">Book a demo</a>
+      </div>
     </div>
   </header>
 
   <div class="page-hero">
     <div class="page-hero-inner">
-      <div class="page-hero-eyebrow-row">
-        <svg class="sl-icon sl-icon--sm" aria-hidden="true" focusable="false"><use href="#sl-delivery"/></svg>
-        <p class="eyebrow">About SmartLane</p>
-      </div>
       <h1>Built inside the problem.</h1>
       <p class="page-hero-sub">We are not a courier. We are not a bank. We are the technology layer that connects Pakistan's merchants, couriers, and capital — so merchants can focus on building their business.</p>
     </div>
@@ -475,54 +387,16 @@
           <p class="label-tag">Our story</p>
         </div>
         <div class="about-story-content">
-          <p>
-            SmartLane did not start in a boardroom. It started inside the same chaos you're probably dealing with right now.
-          </p>
-          <p>
-            Our founders spent years managing e-commerce brands in Pakistan — not building software for them, but actually running them. Five or six courier portals open at the same time. Payments stuck for 40 to 50 days. Bulk Excel sheets standing in for reconciliation. Customer complaints landing at the merchant's door when the courier was to blame. They lived it, and they solved it manually — routing orders, chasing settlements, negotiating rates — until the question became unavoidable: why isn't this a product?
-          </p>
-          <p>
-            What made SmartLane possible is that the team already understood both sides of the problem. <strong>Fatin</strong> and <strong>Adam</strong> had spent years inside Pakistani e-commerce — first helping build the country's earliest platforms, then running an agency that managed growing brands through exactly the operational chaos described above. <strong>Umer</strong> had spent his career on the other side: in investment banking and digital lending, trying to figure out how to get working capital to small businesses cheaply. The insight that brought all three together was simple: couriers already collect COD cash as part of their job. If you build the platform in the middle, the cost of financing goes to near zero. Logistics and cash flow aren't two separate problems — they never were. SmartLane is what happens when the people who lived the operations problem and the people who solved the financing problem build one product together.
-          </p>
-          <p>
-            That product connects your orders to the right courier automatically, settles your COD in hours instead of weeks, and gives you access to working capital based on your actual sales — not your credit history. Everything in one place, designed around how Pakistani merchants actually work.
-          </p>
-          <p>
-            We are not a courier. We are not a bank. We sit permanently in the middle — unbiased, connected, and always on your side. And because we built this from inside the problem, we know exactly which parts of your day we need to give back to you.
-          </p>
+          <p>SmartLane did not start in a boardroom. It started inside the same chaos you're probably dealing with right now.</p>
+          <p>Our founders spent years managing e-commerce brands in Pakistan — not building software for them, but actually running them. Five or six courier portals open at the same time. Payments stuck for 40 to 50 days. Bulk Excel sheets standing in for reconciliation. Customer complaints landing at the merchant's door when the courier was to blame. They lived it, and they solved it manually — routing orders, chasing settlements, negotiating rates — until the question became unavoidable: why isn't this a product?</p>
+          <p>What made SmartLane possible is that the team already understood both sides of the problem. <strong>Fatin</strong> and <strong>Adam</strong> had spent years inside Pakistani e-commerce — first helping build the country's earliest platforms, then running an agency that managed growing brands through exactly the operational chaos described above. <strong>Umer</strong> had spent his career on the other side: in investment banking and digital lending, trying to figure out how to get working capital to small businesses cheaply. The insight that brought all three together was simple: couriers already collect COD cash as part of their job. If you build the platform in the middle, the cost of financing goes to near zero. Logistics and cash flow aren't two separate problems — they never were. SmartLane is what happens when the people who lived the operations problem and the people who solved the financing problem build one product together.</p>
+          <p>That product connects your orders to the right courier automatically, settles your COD in hours instead of weeks, and gives you access to working capital based on your actual sales — not your credit history. Everything in one place, designed around how Pakistani merchants actually work.</p>
+          <p>We are not a courier. We are not a bank. We sit permanently in the middle — unbiased, connected, and always on your side. And because we built this from inside the problem, we know exactly which parts of your day we need to give back to you.</p>
         </div>
       </div>
     </section>
 
     <!-- ── Stats ── -->
-    <div class="about-stats" aria-label="Company milestones">
-      <div class="about-stats-inner">
-        <div class="about-stat-item">
-          <div class="about-stat-icon-wrap" aria-hidden="true"><span class="sl-icon-tile sl-icon-tile--sm"><svg class="sl-icon sl-icon--md" focusable="false"><use href="#sl-delivery"/></svg></span></div>
-          <span class="about-stat-num">2.4M<sup>+</sup></span>
-          <span class="about-stat-label">Deliveries facilitated</span>
-        </div>
-        <div class="about-stat-item">
-          <div class="about-stat-icon-wrap" aria-hidden="true"><span class="sl-icon-tile sl-icon-tile--sm"><svg class="sl-icon sl-icon--md" focusable="false"><use href="#sl-finance"/></svg></span></div>
-          <span class="about-stat-num">$31M<sup>+</sup></span>
-          <span class="about-stat-label">Gross merchandise value processed</span>
-        </div>
-        <div class="about-stat-item">
-          <div class="about-stat-icon-wrap" aria-hidden="true"><span class="sl-icon-tile sl-icon-tile--sm"><svg class="sl-icon sl-icon--md" focusable="false"><use href="#sl-user-add"/></svg></span></div>
-          <span class="about-stat-num">600<sup>+</sup></span>
-          <span class="about-stat-label">Active SMB merchants</span>
-        </div>
-        <div class="about-stat-item">
-          <div class="about-stat-icon-wrap" aria-hidden="true"><span class="sl-icon-tile sl-icon-tile--sm"><svg class="sl-icon sl-icon--md" focusable="false"><use href="#sl-all-features"/></svg></span></div>
-          <span class="about-stat-num">31<sup>+</sup></span>
-          <span class="about-stat-label">Courier integrations</span>
-        </div>
-        <div class="about-stat-item">
-          <div class="about-stat-icon-wrap" aria-hidden="true"><span class="sl-icon-tile sl-icon-tile--sm"><svg class="sl-icon sl-icon--md" focusable="false"><use href="#sl-finance"/></svg></span></div>
-          <span class="about-stat-num">0%</span>
-          <span class="about-stat-label">Bad debt on COD financing to date</span>
-        </div>
-      </div>
     </div>
 
     <!-- ── Team ── -->
@@ -659,18 +533,16 @@
           <h4>Product</h4>
           <ul>
             <li><a href="smart-delivery.html">Smart Delivery</a></li>
-            <li><a href="smart-ops.html">Smart Ops</a></li>
+            <li><a href="smart-ops.html">Smart Operations</a></li>
             <li><a href="smart-finance.html">Smart Finance</a></li>
-            <li><a href="features.html">Features</a></li>
+            <li><a href="../../pages/pricing.html">Pricing</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="about.html" aria-current="page">About Us</a></li>
             <li><a href="support.html#demo">Book a demo</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="support.html">Support</a></li>
             <li><a href="careers.html">Careers</a></li>
           </ul>
         </div>
