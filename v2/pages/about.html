@@ -333,24 +333,60 @@
 
   <header class="nav-wrap" id="top">
     <nav class="nav" aria-label="Primary">
-      <a class="nav-brand" href="../../index.html"><img src="../sl-logo-gradient.svg" alt="SmartLane" /></a>
+      <a class="nav-brand" href="../index.html" aria-label="SmartLane">
+        <img src="../sl-logo-gradient.svg" alt="SmartLane" fetchpriority="high" />
+      </a>
+
       <div class="nav-links">
-        <a href="smart-delivery.html">Smart Delivery</a>
-        <a href="smart-ops.html">Smart Operations</a>
-        <a href="smart-finance.html">Smart Finance</a>
-        <a href="../../pages/pricing.html">Pricing</a>
-        <a href="reseller.html">For Resellers</a>
-        <a href="about.html" aria-current="page">About Us</a>
+        <div class="nav-mega-wrap" data-mega>
+          <button class="nav-mega-btn" aria-expanded="false" aria-haspopup="true">Features <span class="mega-chevron" aria-hidden="true">▾</span></button>
+          <div class="mega-menu" aria-hidden="true">
+            <div class="mega-menu-inner">
+              <a class="mega-card" href="smart-delivery.html">
+                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-delivery"/></svg>
+                <span class="mega-card-stack">
+                  <span class="mega-card-title">Smart Delivery</span>
+                  <span class="mega-card-desc">16+ couriers, one view — same statuses everywhere</span>
+                </span>
+              </a>
+              <a class="mega-card" href="smart-ops.html">
+                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-operations"/></svg>
+                <span class="mega-card-stack">
+                  <span class="mega-card-title">Smart Ops</span>
+                  <span class="mega-card-desc">One queue for sale days &amp; exceptions</span>
+                </span>
+              </a>
+              <a class="mega-card" href="smart-finance.html">
+                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-finance"/></svg>
+                <span class="mega-card-stack">
+                  <span class="mega-card-title">Smart Finance</span>
+                  <span class="mega-card-desc">COD matched order-by-order</span>
+                </span>
+              </a>
+              <a class="mega-card mega-card--all" href="features.html">
+                <svg class="sl-icon sl-icon--md" aria-hidden="true" focusable="false"><use href="#sl-all-features"/></svg>
+                <span class="mega-card-stack"><span class="mega-card-title">All features →</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="reseller.html">Resellers</a>
+        <a href="about.html" aria-current="page">About Smartlane</a>
       </div>
+
       <div class="nav-actions">
         <a class="nav-signin" href="https://app.smartlane.pk" rel="noopener noreferrer" target="_blank">Sign in</a>
-        <a class="btn-primary" href="support.html#demo">Book a demo</a>
+        <a class="btn-primary" href="../index.html#demo">Book a demo</a>
       </div>
-      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
     </nav>
+
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <div class="mobile-menu-header">
-        <a href="../" class="mobile-menu-logo-link" aria-label="SmartLane home">
+        <a href="../index.html" class="mobile-menu-logo-link" aria-label="SmartLane home">
           <img src="../sl-logo-gradient.svg" alt="SmartLane" />
         </a>
         <button class="mobile-menu-close" aria-label="Close menu" type="button">
@@ -358,15 +394,19 @@
         </button>
       </div>
       <nav class="mobile-menu-nav">
-        <a href="smart-delivery.html">Smart Delivery</a>
-        <a href="smart-ops.html">Smart Operations</a>
-        <a href="smart-finance.html">Smart Finance</a>
-        <a href="reseller.html">For Resellers</a>
-        <a href="about.html" aria-current="page">About Us</a>
+        <button class="mobile-sub-toggle" aria-expanded="false" type="button">Features <span aria-hidden="true">▾</span></button>
+        <div class="mobile-sub" data-open="false">
+          <a href="smart-delivery.html">Smart Delivery</a>
+          <a href="smart-ops.html">Smart Ops</a>
+          <a href="smart-finance.html">Smart Finance</a>
+          <a href="features.html">All features</a>
+        </div>
+        <a href="reseller.html">Resellers</a>
+        <a href="about.html" aria-current="page">About Smartlane</a>
       </nav>
       <div class="mobile-menu-footer">
         <a href="https://app.smartlane.pk" target="_blank" rel="noopener" class="mobile-signin">Sign in</a>
-        <a class="btn-hero-primary" href="support.html#demo">Book a demo</a>
+        <a class="btn-hero-primary" href="../index.html#demo">Book a demo</a>
       </div>
     </div>
   </header>

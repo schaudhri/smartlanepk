@@ -1,13 +1,23 @@
 // ── Nav scroll state ──
+// Flips the fixed nav from transparent/white-on-blue to solid/dark-on-white
+// once the dark portion of the hero gradient (its top 55%) scrolls behind it.
+// Pages with no .hero/.page-hero (careers, resources, track) get the solid
+// nav from the start, since there's no dark section for it to sit on.
 const navWrap = document.querySelector('.nav-wrap');
 if (navWrap) {
-  const navSentinel = document.createElement('div');
-  navSentinel.setAttribute('aria-hidden', 'true');
-  navSentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:8px;pointer-events:none;';
-  document.body.prepend(navSentinel);
-  new IntersectionObserver(([entry]) => {
-    navWrap.classList.toggle('scrolled', !entry.isIntersecting);
-  }).observe(navSentinel);
+  const hero = document.querySelector('.hero, .page-hero');
+  if (hero) {
+    const navH = navWrap.offsetHeight;
+    const heroSentinel = document.createElement('div');
+    heroSentinel.setAttribute('aria-hidden', 'true');
+    heroSentinel.style.cssText = 'position:absolute;top:55%;left:0;width:1px;height:1px;pointer-events:none;';
+    hero.appendChild(heroSentinel);
+    new IntersectionObserver(([entry]) => {
+      navWrap.classList.toggle('scrolled', !entry.isIntersecting);
+    }, { rootMargin: `-${navH}px 0px 0px 0px`, threshold: 0 }).observe(heroSentinel);
+  } else {
+    navWrap.classList.add('scrolled');
+  }
 }
 
 // ── Track order modal ──
@@ -39,18 +49,34 @@ trackModal?.addEventListener('keydown', e => {
 });
 
 // ── Mega menu ──
+// Opens on hover for mouse/trackpad users (with a short close delay so
+// crossing the gap between the button and the panel doesn't dismiss it);
+// click/keyboard behavior is unchanged and still works on touch devices.
+const supportsHoverMenu = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 document.querySelectorAll('[data-mega]').forEach(wrap => {
   const btn = wrap.querySelector('.nav-mega-btn');
   const menu = wrap.querySelector('.mega-menu');
   if (!btn || !menu) return;
+  let closeTimer = null;
 
-  function openMega() {
+  function closeOtherMegas() {
+    document.querySelectorAll('[data-mega]').forEach(w => {
+      if (w !== wrap) {
+        w.querySelector('.nav-mega-btn')?.setAttribute('aria-expanded', 'false');
+        w.querySelector('.mega-menu')?.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+  function openMega(focusFirst = true) {
+    clearTimeout(closeTimer);
     btn.setAttribute('aria-expanded', 'true');
     menu.setAttribute('aria-hidden', 'false');
-    requestAnimationFrame(() => {
-      const first = menu.querySelector('a, button');
-      first?.focus();
-    });
+    if (focusFirst) {
+      requestAnimationFrame(() => {
+        const first = menu.querySelector('a, button');
+        first?.focus();
+      });
+    }
   }
   function closeMega() {
     btn.setAttribute('aria-expanded', 'false');
@@ -59,14 +85,19 @@ document.querySelectorAll('[data-mega]').forEach(wrap => {
 
   btn.addEventListener('click', () => {
     const isOpen = btn.getAttribute('aria-expanded') === 'true';
-    document.querySelectorAll('[data-mega]').forEach(w => {
-      if (w !== wrap) {
-        w.querySelector('.nav-mega-btn')?.setAttribute('aria-expanded', 'false');
-        w.querySelector('.mega-menu')?.setAttribute('aria-hidden', 'true');
-      }
-    });
+    closeOtherMegas();
     isOpen ? closeMega() : openMega();
   });
+
+  if (supportsHoverMenu) {
+    wrap.addEventListener('mouseenter', () => {
+      closeOtherMegas();
+      openMega(false);
+    });
+    wrap.addEventListener('mouseleave', () => {
+      closeTimer = setTimeout(closeMega, 150);
+    });
+  }
 
   wrap.addEventListener('keydown', e => {
     if (e.key === 'Escape') { closeMega(); btn.focus(); }
